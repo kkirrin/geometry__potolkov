@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Ra market</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel=" stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+        <header class="z-10 w-full md-28 transition-colors header py-5">
+            <div class="container">
+        
+                <div class="flex items-center justify-between">
+                        
+                    <!-- Левая часть шапки -->
+                    <div class="hidden md:flex justify-between items-center gap-10">
+                        <div class="flex items-center justify-between gap-5">
+                            <img src="./src/img/icons/logo__header.svg" class="" alt="логотиа в шапке">
+                            <span class="text-black">Геометрия</span>
+                        </div>
+        
+                        <div>
+                            <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center">
+                                <li class="mr-4"><a class="text-black font-bold nav-link" href="finished.html"
+                                        data-goto=".page-section-1">О нас</a></li>
+                                <li class="mr-4"><a class="text-black font-bold nav-link" href="contact.html"
+                                        data-goto=".page-section-2">Услуги</a></li>
+                                <li class="mr-4"><a class="text-black font-bold nav-link" href="contact.html"
+                                        data-goto=".page-section-3">Выполненные проекты</a></li>
+                                <li class="mr-4"><a class="text-black font-bold nav-link" href="contact.html"
+                                        data-goto=".page-section-4">Отзывы</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="flex md:hidden items-center justify-between gap-5">
+                        <img src="./src/img/icons/logo__header.svg" class="" alt="логотиа в шапке">
+                        <span class="text-black">Геометрия</span>
+                    </div>
+        
+        
+                    <!-- Правая часть шапки -->
+                    <div class="hidden md:flex items-center justify-between">
+                        <img class="md:hidden block bg-bg-gray p-2 rounded-md" src="./src/img/icons/sap.svg" alt="" >
+        
+                        <li class="mr-4 flex items-center justify-center gap-5">
+                            <img src="./src/img/icons/call.svg" alt="">
+                            <a class="text-black font-bold  nav-link" href="tel:+79532109127">
+                                +7-953-210-91-27
+                            </a>
+                        </li>
+        
+                        <li class="mr-4 list-none">
+                            <a class="nav-link" href="#">
+                                <img class="transform hover:scale-105 transition-all  rounded-full border p-2" src="./src/img/icons/inst.svg" alt="" >
+                            </a>
+                        </li>
+        
+                        <li class="mr-4 list-none">
+                            <a class="nav-link" href="#">
+                            <img class="transform hover:scale-105 transition-all rounded-full border p-2" src="./src/img/icons/sap.svg" alt="" >
+                            </a>
+                        </li>
+        
+                        <a class="text-white up nav-link bg-blue p-2 rounded-md up" href="">
+                            Оставить заявку
+                        </a>
+                    </div>
+        
+            
+        
+                    <!-- Кнопка для мобильного меню -->
+                    <div class="header--container__logo">
+                        <button class="btn__menu--mobile md:hidden flex">
+                                <svg class="h-3 w-3" viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                        </button>
+                    </div>
+        
+                    <!-- Мобильное меню -->
+                    <div class="mobile-menu">
+                        <div class="container">
+                        <a href="/">
+                            <img class="header-logo--small" width="260px" height="160px" src="<?php echo get_template_directory_uri() .'/assets/img/logo/logo__mobile__menu__main.png';?> " alt="Центральное лого"> 
+                        </a>
+        
+                            <nav class="catalog-menu">
+                                <!-- <?php wp_nav_menu([
+                                    'theme_location' => 'mobile-menu',
+                                    'container' => 'ul',
+                                    'menu_class' => 'mobile-menu--nav', 
+                                    ]); 
+                                ?> -->
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+        
+                            </nav>
+        
+                            <nav>
+                                <!-- <?php wp_nav_menu([
+                                    'theme_location' => 'top-auc',
+                                    'container' => 'ul',
+                                    'menu_class' => 'mobile-menu--nav', 
+                                    ]); 
+                                ?> -->
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </nav>
+        
+                                                
+                            <a class="header--btn--mobile header--btn header--btn__mobile" href="https://primasnabauto.ru/ostavit-zayavku/">
+                            Оставить заявку
+                            </a>
+        
+                        <ul class="footer__item footer__item--mobile">
+                                <li class="pb-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2039 15.4651C17.0908 15.5778 16.9544 15.722 16.8098 15.8745C16.449 16.2575 15.9982 16.7336 15.7157 16.9266C14.2291 17.9425 12.2404 17.4564 10.8337 16.8702C8.97804 16.097 6.9577 14.6718 5.14365 12.8574C3.32791 11.0429 1.90287 9.02179 1.12968 7.16707C0.544263 5.75998 0.0571978 3.77077 1.07314 2.28385C1.26606 2.0011 1.74321 1.551 2.12567 1.18945C2.27868 1.04528 2.42171 0.909062 2.5348 0.796329C2.73558 0.596535 3.0073 0.484375 3.29054 0.484375C3.57379 0.484375 3.8455 0.596535 4.04629 0.796329L6.78141 3.5308C6.98108 3.73158 7.09316 4.00324 7.09316 4.28642C7.09316 4.56959 6.98108 4.84125 6.78141 5.04204L6.03632 5.78566C5.78749 6.03269 5.62507 6.35346 5.57323 6.70024C5.5214 7.04703 5.58292 7.40128 5.74863 7.71028C6.77345 9.64462 8.35557 11.2266 10.29 12.2511C10.5989 12.4168 10.9531 12.4782 11.2997 12.4263C11.6464 12.3744 11.967 12.2118 12.2138 11.9629L12.9571 11.2193C13.1579 11.0195 13.4296 10.9073 13.7128 10.9073C13.9961 10.9073 14.2678 11.0195 14.4686 11.2193L17.2039 13.9542C17.4035 14.1549 17.5156 14.4265 17.5156 14.7097C17.5156 14.9928 17.4035 15.2644 17.2039 15.4651Z" fill="white"/>
+                                    </svg>
+                                    <a class="contact--email" href="tel:+78002010888">8 800 20 10 888</a>
+                                </li>
+        
+                                <li class="pb-2">
+                                    <svg width="20.000000" height="14.979492" viewBox="0 0 20 14.9795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M9.01953 7.38672C9.54199 7.73535 10.458 7.73535 10.9805 7.38672L10.981 7.38672L19.8818 1.45312C19.5898 0.608398 18.7876 0 17.8452 0L2.15479 0C1.2124 0 0.410156 0.608398 0.118164 1.45312L9.01953 7.38672L9.01953 7.38672Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector" d="M11.6309 8.36133L11.6304 8.3623C11.1733 8.66699 10.5864 8.81934 10 8.81934C9.41309 8.81934 8.82666 8.66699 8.36963 8.3623L8.36914 8.36133L0 2.78223L0 12.8242C0 14.0127 0.966797 14.9785 2.15479 14.9785L17.8452 14.9785C19.0332 14.9785 20 14.0127 20 12.8242L20 2.78223L11.6309 8.36133Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+        
+                                    <a class="contact--phone" href="mailto:primsnab@inbox.ru">primsnab@inbox.ru</a>
+                                </li>
+        
+                                <li class="pb-2">
+                                <svg width="20.000000" height="14.979492" viewBox="0 0 20 14.9795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M9.01953 7.38672C9.54199 7.73535 10.458 7.73535 10.9805 7.38672L10.981 7.38672L19.8818 1.45312C19.5898 0.608398 18.7876 0 17.8452 0L2.15479 0C1.2124 0 0.410156 0.608398 0.118164 1.45312L9.01953 7.38672L9.01953 7.38672Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector" d="M11.6309 8.36133L11.6304 8.3623C11.1733 8.66699 10.5864 8.81934 10 8.81934C9.41309 8.81934 8.82666 8.66699 8.36963 8.3623L8.36914 8.36133L0 2.78223L0 12.8242C0 14.0127 0.966797 14.9785 2.15479 14.9785L17.8452 14.9785C19.0332 14.9785 20 14.0127 20 12.8242L20 2.78223L11.6309 8.36133Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+        
+                                    <a class="contact--geo">Владивосток, ул. Нижнепортовая, 1 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </header>
+
+        <main>
+            <h1 class="visually-hidden">Территория натуральных продуктов</h1>
+            <!-- Главный экран -->
+            <section class="relative py-24">
+                    <img class="rounded-md absolute -z-10 top-0 left-0" src="./src/img/main__section/bg_main.png" alt="задний фон">
+                    <div class="container z-10 text-center">
+                        <div class="pt-40">
+                            <h2 class="text-white text-3xl md:text-6xl font-bold pb-5">Натяжные потолки в <span class="py-2 px-5 bg-blue rounded-xl">Находке и округе</span></h2>
+                            <p class="text-white font-bold pb-5">Геометрия - выбор тех, кто ценит стиль и качество. Выполняем монтаж потолков под ключ в Находке и округе</p>
+                            <button class="text-blue rounded-xl bg-white p-4 font-bold">
+                                Бесплатный замер
+                            </button>
+                        </div>
+                    </div>
+                </section> 
+
+                <!-- Галерея -->
+                <section class="py-24">
+                    <div class="container">
+                        <h2 class="py-10 text-center">Честно исполняем обязательства и следим за качеством работ</h2>
+                        <div class="flex justify-center gap-5 flex-wrap">
+                            <div class="p-20 bg-light-blue rounded-xl flex-wrap">
+                                <img src="./src/" alt="картинка"> 
+                                <p>Качество</p>
+                                <p>Какой-то текст</p>
+
+                            </div>
+                            <div class="p-20 bg-light-blue rounded-xl">
+                                <img src="./src/" alt="картинка"> 
+                                <p>Качество</p>
+                                <p>Какой-то текст</p>
+
+                            </div>
+                            <div class="p-20 bg-light-blue rounded-xl">
+                                <img src="./src/" alt="картинка"> 
+                                <p>Качество</p>
+                                <p>Какой-то текст</p>
+
+                            </div>
+                            <div class="p-20 bg-light-blue rounded-xl">
+                                <img src="./src/" alt="картинка"> 
+                                <p>Качество</p>
+                                <p>Какой-то текст</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Весенняя акция -->
+                <section class="py-24">
+                    <div class="container">
+                        <h2 class="py-10 text-center">Честно исполняем обязательства и следим за качеством работ</h2>
+                        <ul class="flex flex-wrap gap-10">
+                            <li class="p-20 bg-light-blue rounded-xl w-[550px]">
+                                1
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[550px]">
+                               2
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                               3
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                               4
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                                1
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                               2
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[500px]">
+                               3
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                               4
+                            </li>
+                            <li class="p-20 bg-light-blue rounded-xl w-[250px]">
+                               4
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Дополнительные услуги -->
+                <section class="py-24">
+                    <div class="container bg-blue rounded-xl p-10">   
+                        <div class="py-28 px-44 bg-white rounded-xl">
+                            <h2>Весенняя акция</h2>
+                            <p>Успейте заказать монтаж потолков до конца мая и мы установим софиты бесплатно</p>
+                            <button>Вызвать замерщика</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Проекты в Находке -->
+                <section class="py-24">
+                    <div class="container">   
+                        <div class="py-28 px- md:px-44 bg-white rounded-xl">
+                            <h2 class='text-center py-10'><span class="py-2 px-5 bg-blue rounded-xl">Каждый пятый натяжной</span> потолок в Находке сделан нашей компанией</h2>
+                            <div class="flex justify-center items-center gap-10 flex-wrap">
+                                <div class="p-20 bg-light-blue">
+                                    1
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    2
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    3
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    1
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    2
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    3
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    2
+                                </div>
+                                <div class="p-20 bg-light-blue">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Как происходит устонановка -->
+                <section class="py-24 install">
+                    <div class="container">   
+                        <div class="py-28 px-0 md:px-44 bg-white rounded-xl w-0 min-w-[100%]">
+                            <h2 class='text-center py-10'>Как происходит установка?</h2>
+                            <div class="flex justify-center items-center gap-10 flex-wrap install-swiper swiper">
+                                <ul class="swiper-wrapper max-h-full">
+                                    <li class="p-20 swiper-slide">
+                                        <div class=" relative bg-light-blue rounded-lg p-20">
+                                            <div class="rounded-full bg-blue py-4 px-6">1</div>
+                                            <span>Ваша заявка</span>
+                                            <img class="absolute -right-14 top-0" src="./src/img/install/arrow__right.svg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="p-20 swiper-slide">
+                                        <div class="mt-10 relative bg-light-blue rounded-lg p-20">
+                                            <div class="rounded-full bg-blue py-4 px-6">1</div>
+                                            <span>Ваша заявка</span>
+                                            <img class="absolute -right-14 bottom-0" src="./src/img/install/arrow__left.svg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="p-20 swiper-slide">
+                                        <div class=" relative bg-light-blue rounded-lg p-20">
+                                            <div class="rounded-full bg-blue py-4 px-6">1</div>
+                                            <span>Ваша заявка</span>
+                                            <img class="absolute -right-14 top-0" src="./src/img/install/arrow__right.svg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="p-20 swiper-slide">
+                                        <div class="mt-10 relative bg-light-blue rounded-lg p-20">
+                                            <div class="rounded-full bg-blue py-4 px-6">1</div>
+                                            <span>Ваша заявка</span>
+                                            <img class="absolute -right-14 bottom-0" src="./src/img/install/arrow__left.svg" alt="">
+                                        </div>
+                                    </li>
+                                    
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                  <!-- Отзывы -->
+                  <section class="py-24 review">
+                    <div class="container">   
+                        <div class="py-28 px-0 md:px-44 bg-white rounded-xl w-0 min-w-[100%]">
+                            <h2 class='text-center py-10'>Ознакомьтесь с отзывами <span class="py-2 px-5 bg-blue rounded-xl">клиентов</span></h2>
+                            <div class="flex justify-center items-center gap-10 flex-wrap review-swiper swiper">
+                                <ul class="swiper-wrapper max-h-full">
+                                    <li class="swiper-slide">
+                                        <div class="relative">
+                                            <a href="./src/img/about__shop/about_shop_2.png">
+                                                <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_2.png" alt="фото-2" data-caption="Image caption">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="relative">
+                                            <a href="./src/img/about__shop/about_shop_3.png">
+                                                <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_3.png" alt="фото-3" data-caption="Image caption" >
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="relative">
+                                            <a href="./src/img/about__shop/about_shop_1.png">
+                                                <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_1.png" alt="фото-1" data-caption="Image caption" >
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="relative">
+                                            <a href="./src/img/about__shop/about_shop_4.png">
+                                                <img class="rounded-2xl object-cover" src="./src/img/about__shop/about_shop_4.png" alt="фото-4" data-caption="Image caption" >
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Карта -->
+                <section class="pt-24 review">
+                    <div class="container">   
+                        <div class="py-28 px-0 md:px-44 bg-white rounded-xl w-0 min-w-[100%]">
+                            <h2 class='text-center py-10'>Ещё мы работаем в Партизанске, Ливадии, Врангеле, Большом Камне, и Фокино.</h2>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7eac3cdb49c8074a168d866e8338bbab5926a3ad8752eb7e829a4324796c3151&amp;width=100%25&amp;height=638&amp;lang=ru_RU&amp;scroll=true"></script>
+                    
+
+                    <div class="container relative left-[180px]">   
+                        <div class="flex py-4 px-10 bg-white absolute bottom-0 justify-center items-center gap-10">
+                            <a href="">Номер телефона</a>
+                            <a href="">Номер телефона</a>
+                            <a href="">Номер телефона</a>
+                            <a href="">Номер телефона</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+                
+    </div>
+    <div class="scroll-top">
+        <img src="./src/img/up-arrow.svg" alt="стрелка вверх">
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/baguettebox.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
+
+
+
