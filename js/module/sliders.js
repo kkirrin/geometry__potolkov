@@ -5,11 +5,20 @@ export const initSlider = () => {
     console.log('Я тут')
     if (category) {
         const item = new Swiper('.install-swiper', {
-            loop: true,
+            loop: false,
             spaceBetween: 30,
+            speed: 1500,
             breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
                 374: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 767: {
@@ -37,6 +46,7 @@ export const initReviewSlider = () => {
         const item = new Swiper('.review-swiper', {
             loop: true,
             spaceBetween: 30,
+            speed: 1500,
             breakpoints: {
                 374: {
                     slidesPerView: 1,
@@ -46,9 +56,13 @@ export const initReviewSlider = () => {
                     slidesPerView: 2,
                 },
                 1023: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 30,
                 },
+            },
+            navigation: {
+                nextEl: '.next-review',
+                prevEl: '.prev-review',
             },
 
             pagination: {

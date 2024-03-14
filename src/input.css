@@ -1,5 +1,5 @@
 /* Импорт шрифтов */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap'); */
 
 
 /* Импорт кастомных стилей для компонентов */
@@ -10,6 +10,9 @@
 @import './block/popup.css';
 @import './block/animateSocialsBtn.css';
 @import './block/view__gallery.css';
+@import './block/hero__section.css';
+@import './block/spring.css';
+@import './block/services.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -20,16 +23,16 @@
 
   
   @font-face {
-    font-family: 'MontserratAlternates-Bold';
-    src: url('./fonts/MontserratAlternates-Bold.ttf');
+    font-family: 'MontserratAlternates';
+    src: url('/src/fonts/MontserratAlternates-Bold.ttf');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   
   @font-face {
-    font-family: 'MontserratAlternates-Medium';
-    src: url('./fonts/MontserratAlternates-Medium.ttf');
+    font-family: 'MontserratAlternates';
+    src: url('/src/fonts/MontserratAlternates-Medium.ttf');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -38,13 +41,17 @@
   
   @font-face {
     font-family: 'MontserratAlternates';
-    src: url('./fonts/MontserratAlternates-Regular.ttf');
+    src: url('/src/fonts/MontserratAlternates-Regular.ttf');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
-  
+
+* {
+    font-family: 'MontserratAlternates', sans-serif; 
+}
+
 
 @layer base {
     html {
@@ -54,13 +61,15 @@
     body {
         font-family: 'MontserratAlternates', sans-serif;
         color: #262626;
-        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        background-color: #F1FAFF;
         font-weight: 400;
     }
 
     h2, h3 {
-        font-family: 'MontserratAlternates';
+        font-family: 'MontserratAlternates', sans-serif;
         line-height: 85px;
+        font-weight: 600;
+        font-size: clamp(1.438rem, 0.866rem + 2.857vw, 3.438rem);
     }
 
     span.counter-items,
@@ -76,49 +85,6 @@
     }
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* Директивы классов */
 
@@ -160,3 +126,54 @@ table {
     padding-bottom: 10px;
 }
 
+
+.arrows__slider {
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    right: -22px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  
+  @media(max-width:1025px) {
+    .arrows__slider {
+      display: none;
+    }
+  }
+
+
+  .form__input {
+    background-color: #f1f1f1;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0px 10px 10px;
+    margin-top: 5px;
+  }
+
+  .banner__img__main {
+    position: absolute;
+    border-radius: 10px;
+
+  }
+
+@media(max-width:769px) {
+    .banner__img__main {
+       height: 66vh;
+       object-fit: none;
+    } 
+  }
+
+@media(max-width:1441px) {
+    .woman__img {
+        height: 604px;
+        left: auto;
+    }
+}
+@media(max-width:960px) {
+    .woman__img {
+        display: none;
+    }
+}

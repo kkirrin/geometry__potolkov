@@ -1,0 +1,32 @@
+.main__image {
+    object-fit: fill;
+}
+
+.hero__title__container {
+    padding-top: 80px;
+}
+
+
+.hero__title__container h2 {
+    line-height: 1.2;
+}
+
+@media(max-width:1440px) {
+    .hero__title__container {
+        padding-top: 0px;
+    }
+}  
+
+@media(max-width:1024px) {
+    .main__image {
+        padding: 20px;
+        height: 50vh;   
+    }
+}  
+
+@media(max-width:1024px) {
+    .main__image {
+        padding: 20px;
+        height: 50vh;   
+    }
+}  

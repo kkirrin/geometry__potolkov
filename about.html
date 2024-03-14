@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Ra market</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel=" stylesheet" href="css/main.css">
+    
+</head>
+
+<body class="wrapper">
+    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+        <header class="z-10 w-full md-28 transition-colors header py-5">
+            <div class="container">
+        
+                <div class="flex items-center justify-between">
+                        
+                    <!-- Левая часть шапки -->
+                    <div class="hidden md:flex justify-between items-center gap-10">
+                        <div class="flex items-center justify-between gap-5">
+                            <a href="/">
+                                <img src="./src/img/icons/logo__header.svg" class="" alt="логотиа в шапке">
+                            </a>
+                            <span class="text-black">Геометрия</span>
+                        </div>
+        
+                        <div>
+                            <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center">
+                                <li class="transform hover:scale-105 transition-all mr-4"><a class="text-black font-medium nav-link" href="finished.html"
+                                        data-goto=".page-section-1">О нас</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4"><a class="text-black font-medium nav-link" href="contact.html"
+                                        data-goto=".page-section-2">Услуги</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4"><a class="text-black font-medium nav-link" href="contact.html"
+                                        data-goto=".page-section-3">Выполненные проекты</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4"><a class="text-black font-medium nav-link" href="contact.html"
+                                        data-goto=".page-section-4">Отзывы</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="flex md:hidden items-center justify-between gap-5">
+                        <img src="./src/img/icons/logo__header.svg" class="" alt="логотиа в шапке">
+                        <span class="text-black">Геометрия</span>
+                    </div>
+        
+        
+                    <!-- Правая часть шапки -->
+                    <div class="hidden md:flex items-center justify-between">
+                        <img class="md:hidden block bg-bg-gray p-2 rounded-md" src="./src/img/icons/sap.svg" alt="" >
+        
+                        <li class="mr-4 flex items-center justify-center gap-5 transform hover:scale-105 transition-all">
+                            <img src="./src/img/icons/call.svg" alt="">
+                            <a class="text-black font-bold  nav-link" href="tel:+79532109127">
+                                +7-953-210-91-27
+                            </a>
+                        </li>
+        
+                        <li class="mr-4 list-none">
+                            <a class="nav-link" href="#">
+                                <img class="transform hover:scale-105 transition-all p-2" src="./src/img/icons/inst.svg" alt="" >
+                            </a>
+                        </li>
+        
+                        <li class="mr-4 list-none">
+                            <a class="nav-link" href="#">
+                            <img class="transform hover:scale-105 transition-all p-2" src="./src/img/icons/sap.svg" alt="" >
+                            </a>
+                        </li>
+        
+                        <a class="text-white up nav-link bg-blue p-2 rounded-md btn__main popup-link" href="#popup1">
+                            Оставить заявку
+                        </a>
+                    </div>
+        
+            
+        
+                    <!-- Кнопка для мобильного меню -->
+                    <div class="header--container__logo">
+                        <button class="btn__menu--mobile md:hidden flex">
+                                <svg class="h-3 w-3" viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                        </button>
+                    </div>
+        
+                    <!-- Мобильное меню -->
+                    <div class="mobile-menu">
+                        <div class="container">
+                        <a href="/">
+                            <img class="header-logo--small" width="260px" height="160px" src="<?php echo get_template_directory_uri() .'/assets/img/logo/logo__mobile__menu__main.png';?> " alt="Центральное лого"> 
+                        </a>
+        
+                            <nav class="catalog-menu">
+                                <!-- <?php wp_nav_menu([
+                                    'theme_location' => 'mobile-menu',
+                                    'container' => 'ul',
+                                    'menu_class' => 'mobile-menu--nav', 
+                                    ]); 
+                                ?> -->
+                                    <ul>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+        
+                            </nav>
+        
+                            <nav>
+                                <!-- <?php wp_nav_menu([
+                                    'theme_location' => 'top-auc',
+                                    'container' => 'ul',
+                                    'menu_class' => 'mobile-menu--nav', 
+                                    ]); 
+                                ?> -->
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                </ul>
+                            </nav>
+        
+                                                
+                            <a class="header--btn--mobile header--btn header--btn__mobile" href="https://primasnabauto.ru/ostavit-zayavku/">
+                            Оставить заявку
+                            </a>
+        
+                        <ul class="footer__item footer__item--mobile">
+                                <li class="pb-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2039 15.4651C17.0908 15.5778 16.9544 15.722 16.8098 15.8745C16.449 16.2575 15.9982 16.7336 15.7157 16.9266C14.2291 17.9425 12.2404 17.4564 10.8337 16.8702C8.97804 16.097 6.9577 14.6718 5.14365 12.8574C3.32791 11.0429 1.90287 9.02179 1.12968 7.16707C0.544263 5.75998 0.0571978 3.77077 1.07314 2.28385C1.26606 2.0011 1.74321 1.551 2.12567 1.18945C2.27868 1.04528 2.42171 0.909062 2.5348 0.796329C2.73558 0.596535 3.0073 0.484375 3.29054 0.484375C3.57379 0.484375 3.8455 0.596535 4.04629 0.796329L6.78141 3.5308C6.98108 3.73158 7.09316 4.00324 7.09316 4.28642C7.09316 4.56959 6.98108 4.84125 6.78141 5.04204L6.03632 5.78566C5.78749 6.03269 5.62507 6.35346 5.57323 6.70024C5.5214 7.04703 5.58292 7.40128 5.74863 7.71028C6.77345 9.64462 8.35557 11.2266 10.29 12.2511C10.5989 12.4168 10.9531 12.4782 11.2997 12.4263C11.6464 12.3744 11.967 12.2118 12.2138 11.9629L12.9571 11.2193C13.1579 11.0195 13.4296 10.9073 13.7128 10.9073C13.9961 10.9073 14.2678 11.0195 14.4686 11.2193L17.2039 13.9542C17.4035 14.1549 17.5156 14.4265 17.5156 14.7097C17.5156 14.9928 17.4035 15.2644 17.2039 15.4651Z" fill="white"/>
+                                    </svg>
+                                    <a class="contact--email" href="tel:+78002010888">8 800 20 10 888</a>
+                                </li>
+        
+                                <li class="pb-2">
+                                    <svg width="20.000000" height="14.979492" viewBox="0 0 20 14.9795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M9.01953 7.38672C9.54199 7.73535 10.458 7.73535 10.9805 7.38672L10.981 7.38672L19.8818 1.45312C19.5898 0.608398 18.7876 0 17.8452 0L2.15479 0C1.2124 0 0.410156 0.608398 0.118164 1.45312L9.01953 7.38672L9.01953 7.38672Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector" d="M11.6309 8.36133L11.6304 8.3623C11.1733 8.66699 10.5864 8.81934 10 8.81934C9.41309 8.81934 8.82666 8.66699 8.36963 8.3623L8.36914 8.36133L0 2.78223L0 12.8242C0 14.0127 0.966797 14.9785 2.15479 14.9785L17.8452 14.9785C19.0332 14.9785 20 14.0127 20 12.8242L20 2.78223L11.6309 8.36133Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+        
+                                    <a class="contact--phone" href="mailto:primsnab@inbox.ru">primsnab@inbox.ru</a>
+                                </li>
+        
+                                <li class="pb-2">
+                                <svg width="20.000000" height="14.979492" viewBox="0 0 20 14.9795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="Vector" d="M9.01953 7.38672C9.54199 7.73535 10.458 7.73535 10.9805 7.38672L10.981 7.38672L19.8818 1.45312C19.5898 0.608398 18.7876 0 17.8452 0L2.15479 0C1.2124 0 0.410156 0.608398 0.118164 1.45312L9.01953 7.38672L9.01953 7.38672Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                        <path id="Vector" d="M11.6309 8.36133L11.6304 8.3623C11.1733 8.66699 10.5864 8.81934 10 8.81934C9.41309 8.81934 8.82666 8.66699 8.36963 8.3623L8.36914 8.36133L0 2.78223L0 12.8242C0 14.0127 0.966797 14.9785 2.15479 14.9785L17.8452 14.9785C19.0332 14.9785 20 14.0127 20 12.8242L20 2.78223L11.6309 8.36133Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </svg>
+        
+                                    <a class="contact--geo">Владивосток, ул. Нижнепортовая, 1 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </header>
+
+        <main>
+            <h1 class="visually-hidden">Территория натуральных продуктов</h1>
+            <!-- Главный экран -->
+                <section class="relative py-6 sm:py-12 md:py-14">
+                    <div class="container">
+                        <h2>
+                            О нашей компании
+                        </h2>
+
+                        <p class="text-black opacity-70 py-2">
+                            Продвижение проекта без оглядки на авторитеты стабилизирует бизнес-план, отвоевывая рыночный сегмент. План размещения, на первый взгляд, парадоксально порождает потребительский рынок, повышая конкуренцию. Партисипативное планирование, в рамках сегодняшних воззрений, поддерживает комплексный продукт, расширяя долю рынка. Клиентский спрос концентрирует стиль менеджмента, не считаясь с затратами.
+                        </p>
+
+                        <p class="text-black opacity-70 py-2">
+                            Создание приверженного покупателя, согласно Ф.Котлеру, амбивалентно. По мнению ведущих маркетологов, поисковая реклама отталкивает побочный PR-эффект, оптимизируя бюджеты. Один из признанных классиков маркетинга Ф.Котлер определяет это так: нестандартный подход интуитивно изменяет контент. VIP-мероприятие, анализируя результаты рекламной кампании, программирует межличностный стратегический маркетинг, осознав маркетинг как часть производства.
+                        </p>
+                    </div>
+                </section> 
+
+                <!-- Качество -->
+                <section class="py-6 sm:py-12 md:py-14">
+                    <div class="container">
+                        <h2 class="py-10 text-start text-lg sm:text-2xl md:text-4xl">Причины заказать потолки у Геометрии:</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+                            <div class="p-10 bg-light-blue rounded-xl flex flex-col justify-center items-center transform hover:shadow-xl shadow-black hover:scale-105 transition-all">
+                                <img src="./src/img/icons/quality1.svg" alt="картинка"> 
+                                <p class="text-center pt-2 font-semibold text-xl md:text-2xl">Качество</p>
+                                <p class="text-center pt-2 font-light text-black opacity-70 text-base">Гарантия 15 лет</p>
+                            </div>
+                            <div class="p-10 bg-light-blue rounded-xl flex flex-col justify-center items-center transform hover:shadow-xl shadow-black hover:scale-105 transition-all">
+                                <img src="./src/img/icons/quality2.svg" alt="картинка"> 
+                                <p class="text-center pt-2 font-semibold text-xl md:text-2xl">Аккуратность</p>
+                                <p class="text-center pt-2 font-light text-black opacity-70 text-base">Безопасно для электропроводки</p>
+                            </div>
+                            <div class="p-10 bg-light-blue rounded-xl flex flex-col justify-center items-center transform hover:shadow-xl shadow-black hover:scale-105 transition-all">
+                                <img src="./src/img/icons/quality3.svg" alt="картинка"> 
+                                <p class="text-center pt-2 font-semibold text-xl md:text-2xl">Скорость</p>
+                                <p class="text-center pt-2 font-light text-black opacity-70 text-base">Выполним монтаж за 2—3 часа</p>
+                            </div>
+                            <div class="p-10 bg-light-blue rounded-xl flex flex-col justify-center items-center transform hover:shadow-xl shadow-black hover:scale-105 transition-all">
+                                <img src="./src/img/icons/quiality4.svg" alt="картинка"> 
+                                <p class="text-center pt-2 font-semibold text-xl md:text-2xl">Чистая работа</p>
+                                <p class="text-center pt-2 font-light text-black opacity-70 text-base">После себя не оставляем грязи и мусора</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Наши сотрудники -->
+                <section class="relative py-6 sm:py-12 md:py-14">
+                <div class="container">
+                    <h2 class="py-10 text-start text-lg sm:text-2xl md:text-4xl">
+                        Наши сотрудники
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:flex flex-wrap justify-start items-center gap-5 team__list">
+
+                        <div class="flex justify-center items-center transform shadow-black hover:scale-105 hover:shadow-2xl flex-col rounded-2xl transition-all">
+                            <div class="rounded-2xl bg-bg-white w-[290px] flex items-center justify-center h-[320px]">
+                                <img src="./src/img/icons/placeholder.svg" alt="тут будет фото сотрудника" class="">
+                            </div>
+                            <p class="font-semibold pt-2 pb-1">Василий Силий</p>
+                            <p>Гипердиректор</p>
+                        </div>
+
+                        <div class="flex justify-center items-center transform shadow-black hover:scale-105 hover:shadow-2xl flex-col rounded-2xl transition-all ">   
+                            <div class="rounded-2xl bg-bg-white w-[290px] flex items-center justify-center h-[320px]">
+                                <img src="./src/img/icons/placeholder.svg" alt="тут будет фото сотрудника" class="">
+                            </div>
+                            <p class="font-semibold pt-2 pb-1">Василий Силий</p>
+                            <p>Гипердиректор</p>
+                        </div>
+
+                        <div class="flex justify-center items-center transform shadow-black hover:scale-105 hover:shadow-2xl flex-col rounded-2xl transition-all">   
+                            <div class="rounded-2xl bg-bg-white w-[290px] flex items-center justify-center h-[320px]">
+                                <img src="./src/img/icons/placeholder.svg" alt="тут будет фото сотрудника" class="">
+                            </div>
+                            <p class="font-semibold pt-2 pb-1">Василий Силий</p>
+                            <p>Гипердиректор</p>
+                        </div>
+
+                        <div class="flex justify-center items-center transform shadow-black hover:scale-105 hover:shadow-2xl flex-col rounded-2xl transition-all">  
+                            <div class="rounded-2xl bg-bg-white w-[290px] flex items-center justify-center h-[320px]">
+                                <img src="./src/img/icons/placeholder.svg" alt="тут будет фото сотрудника" class="">
+                            </div>
+                            <p class="font-semibold pt-2 pb-1">Василий Силий</p>
+                            <p>Гипердиректор</p>
+                        </div>
+                </div>
+                </section> 
+
+                <!-- Баннер -->
+                <section class="relative h-[600px]">
+                    <img class="banner__img__main h-[600px]" src="./src/img/bg-final.png">
+                    <img class="woman__img z-0 absolute h-[600px] left-24" src="./src/img/woman.png" alt="женщина">
+                    <div class="container relative">
+
+                        <div class="absolute top-0 left-5 right-auto md:left-auto md:top-24 md:-right-10">
+                            <h2 class="text-white">Клиенты доверяют нам <br><span class="py-2 px-5 bg-blue rounded-xl text-white">не первый год</span></h2>
+                            <p class="text-white py-5">Доверьтесь и вы! Запишитесь на бесплатный замер, <br> наш мастер приедет к вам в ближайшее свободное время</p>
+                            <form class="flex justify-center items-center pt-10 pb-10 flew-wrap flex-col md:flex-row gap-2 md:gap-10">
+                                <input class="transform hover:scale-105 transition-all bg-white rounded-3xl py-5 px-10" placeholder="Имя">
+
+                                <input class="transform hover:scale-105 transition-all bg-white rounded-3xl py-5 px-10" placeholder="+7 999 999 99 99">
+
+                                <button class="transform hover:scale-105 transition-all text-white up nav-link bg-blue py-5 px-10 rounded-3xl btn__main"> Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                    <div class="xs:left-[80px] sm:left-[100px] md:left-[500px] flex rounded-3xl py-4 px-10 bg-white sm:justify-start md:justify-center items-center gap-10 flex-col md:flex-row -bottom-72 md:bottom-0 absolute">
+                        <div class="transform hover:scale-105 transition-all flex gap-2 justify-center items-center">
+                            <img src="./src/img/icons/call.svg">
+                            <a class="font-bold" href="tel:+79532109127">+7-953-210-91-27</a>
+                        </div>
+                        <div class="transform hover:scale-105 transition-all flex gap-2 justify-center items-center">
+                            <img src="./src/img/icons/call.svg">
+                            <a class="font-bold" href="tel:+74236640999">+7-4236-640-999</a>
+                        </div>
+                        <div class="transform hover:scale-105 transition-all flex gap-2 justify-center items-center">
+                            <img src="./src/img/icons/email.svg">
+                            <a class="font-bold" href="mailto:geometry@info.com">geometry@info.com</a>
+                        </div>
+                        <div class="flex gap-5">
+                            <img class="transform hover:scale-105 shadow-black hover:shadow-2xl transition-all" src="./src/img/icons/sap.svg">
+                            <img class="transform hover:scale-105 shadow-black hover:shadow-2xl transition-all" src="./src/img/icons/inst.svg">
+                            <img class="transform hover:scale-105 shadow-black hover:shadow-2xl transition-all" src="./src/img/icons/tg.svg">
+                            <img class="transform hover:scale-105 shadow-black hover:shadow-2xl transition-all" src="./src/img/icons/vk.svg">
+                        </div>
+                    </div>
+                </section>
+            </main>
+                
+    </div>
+    <div class="scroll-top transform hover:scale-105 transition-all">
+        <img src="./src//img/icons/arrow.svg" alt="стрелка вверх">
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/baguettebox.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+
+<section id="popup1" class="popup">
+    <div class="popup__body rounded-2xl">
+        <div class="popup__content rounded-2xl">
+            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                <svg width="30" height="30" focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                    <path
+                        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                    </path>
+                </svg>
+            </button>
+            <p class="text-black text-lg font-semibold pb-2">Обратный звонок</p>
+            <p class="popup__desc" class="mb-7">Оставьте контакты и наш администратор свяжется с вами в течении 15 минут</p>
+
+            <div class="form-wrapper">
+                
+                
+                <form action="" class="flex flex-col gap-5">
+                    <input placeholder="Ваше имя" class="form__input">
+
+                    <input placeholder="+7 999 999 99 99" class="form__input">
+
+                    <a class="text-white up nav-link bg-blue p-2 rounded-2xl btn__main popup-link" href="#popup1">
+                        Оставить заявку
+                    </a>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+</html>
+
+
+
